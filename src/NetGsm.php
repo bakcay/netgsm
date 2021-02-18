@@ -21,12 +21,6 @@ class NetGsm
         $this->content = $message;
     }
 
-    public static function sendMessage($message,$number){
-       self::setNumber($number);
-        self::setMessage($message);
-       return  self::send();
-    }
-
     public function setMessage($message){
         $this->content = $message;
         return $this;
@@ -42,7 +36,7 @@ class NetGsm
         $message = '<?xml version="1.0" encoding="iso-8859-9"?>
                     <mainbody>
                         <header>
-                            <company>NETGSM</company>
+                            <company dil="TR">NETGSM</company>
                             <usercode>' . $this->username . '</usercode>
                             <password>' . $this->password . '</password>
                             <startdate></startdate>
@@ -52,11 +46,11 @@ class NetGsm
                         </header>
                         <body>
                             <msg><![CDATA[' . $this->content . ']]></msg>
-                            <no>90' . $this->gsmNumber . '</no>
+                            <no>' . $this->gsmNumber . '</no>
                         </body>
                     </mainbody>';
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, 'http://api.netgsm.com.tr/xmlbulkhttppost.asp');
+        curl_setopt($ch, CURLOPT_URL, 'https://api.netgsm.com.tr/sms/send/xml');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_HTTPHEADER, ["Content-Type: text/xml"]);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $message);
