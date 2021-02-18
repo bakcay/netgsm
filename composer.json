@@ -1,0 +1,36 @@
+{
+    "name": "bakcay/netgsm",
+    "description": "Netgsm Laravel Easy Way...",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bünyamin AKÇAY",
+            "email": "bunyamin@bunyam.in",
+            "homepage": "htts://bunyam.in"
+        }
+    ],
+    "homepage": "https://github.com/bakcay/netgsm",
+    "keywords": ["laravel", "netgsm","toplusms"],
+    "require": {
+        "php": "^7.3 | ^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bakcay\\NetGsm\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bakcay\\NetGsm\\NetGsmServiceProvider"
+            ],
+            "aliases": {
+                "NetGsm": "Bakcay\\NetGsm\\Facades\\NetGsm"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
