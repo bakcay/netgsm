@@ -42,10 +42,7 @@ class NetGsm
         );
     }
 
-    public function send()
-    {
-        if ($this->checkVariable()) {
-
+    public function send() {
 
             $message = '<?xml version="1.0" encoding="iso-8859-9"?>
                         <mainbody>
@@ -70,7 +67,7 @@ class NetGsm
             curl_setopt($ch, CURLOPT_HTTPHEADER, ["Content-Type: text/xml"]);
             curl_setopt($ch, CURLOPT_POSTFIELDS, $message);
             return curl_exec($ch);
-        }
+
     }
 
 

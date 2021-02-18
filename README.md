@@ -30,9 +30,9 @@ NETGSM_HEADER=Myfirm
 
 
 ```php
-$response =  \Bakcay\NetGsm\NetGsm()
-            ->setMessage("Hello, Message")
-            ->setNumber("05354790101")
+ $message = new \Bakcay\NetGsm\NetGsm();
+ $message->setMessage("Hello, Message")
+            ->setNumber("05354440000")
             ->send();
 ```
 
