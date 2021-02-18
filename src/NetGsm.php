@@ -33,7 +33,7 @@ class NetGsm
 
     public function send() {
 
-        $message = '<?xml version="1.0" encoding="iso-8859-9"?>
+        $message = '<?xml version="1.0" encoding="UTF-8"?>
                     <mainbody>
                         <header>
                             <company dil="TR">NETGSM</company>
