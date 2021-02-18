@@ -31,17 +31,6 @@ class NetGsm
     }
 
 
-    private static function toUppercaseTr(string $name): string
-    {
-        return mb_strtoupper(
-            str_replace(
-                ['ç', 'ğ', 'ı', 'ö', 'ş', 'ü', 'i'],
-                ['Ç', 'Ğ', 'I', 'Ö', 'Ş', 'Ü', 'İ'],
-                $name
-            )
-        );
-    }
-
     public function send() {
 
             $message = '<?xml version="1.0" encoding="iso-8859-9"?>
