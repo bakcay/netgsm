@@ -13,7 +13,7 @@ You should install this package through Composer.
 
 
 You do not need to edit app.php if you are using laravel 7+,
-- "7- Versions are not supported."
+- "laravel 7 or lower versions are not supported."
 
 Edit .env file parameters below
 
