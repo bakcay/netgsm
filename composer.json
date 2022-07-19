@@ -12,8 +12,7 @@
     "homepage": "https://github.com/bakcay/netgsm",
     "keywords": ["laravel", "netgsm","toplusms"],
     "require": {
-        "php": "^7.3 | ^8.0",
-        "illuminate/support": "^8.0"
+        "php": "^7.3 | ^8.0| ^8.1"
     },
     "autoload": {
         "psr-4": {
