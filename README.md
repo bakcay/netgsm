@@ -1,9 +1,6 @@
 ## Laravel netgsm Package
-===
 
-
-- **AUTHOR** Bünyamin AKÇAY bunyamin@bunyam.in
-
+Simplest netgsm package for Laravel 7+
 
 ## Installation
 
@@ -34,4 +31,13 @@ NETGSM_HEADER=Myfirm
             ->send();
 ```
 
+
+
 That's it, enjoy.
+
+===
+
+
+- **AUTHOR** Bünyamin AKÇAY bunyamin@bunyam.in
+
+

@@ -1,35 +1,40 @@
 {
-    "name": "bakcay/netgsm",
-    "description": "Netgsm Laravel Easy Way...",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Bünyamin AKÇAY",
-            "email": "bunyamin@bunyam.in",
-            "homepage": "https://bunyam.in"
-        }
-    ],
-    "homepage": "https://github.com/bakcay/netgsm",
-    "keywords": ["laravel", "netgsm","toplusms"],
-    "require": {
-        "php": "^7.3 | ^8.0| ^8.1"
-    },
-    "autoload": {
-        "psr-4": {
-            "Bakcay\\NetGsm\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Bakcay\\NetGsm\\NetGsmServiceProvider"
-            ],
-            "aliases": {
-                "NetGsm": "Bakcay\\NetGsm\\Facades\\NetGsm"
-            }
-        }
-    },
-    "config": {
-        "sort-packages": true
+  "name": "bakcay/netgsm",
+  "description": "Netgsm Laravel Easy Way...",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bünyamin AKÇAY",
+      "email": "bunyamin@bunyam.in",
+      "homepage": "https://bunyam.in"
     }
+  ],
+  "homepage": "https://github.com/bakcay/netgsm",
+  "keywords": [
+    "laravel",
+    "netgsm",
+    "toplusms"
+  ],
+  "require": {
+    "php": "^7.4|^8.0|^8.1|^8.2|^8.3",
+    "laravel/framework": "^7.0|^8.0|^9.0|^10.0|^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Bakcay\\NetGsm\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Bakcay\\NetGsm\\NetGsmServiceProvider"
+      ],
+      "aliases": {
+        "NetGsm": "Bakcay\\NetGsm\\Facades\\NetGsm"
+      }
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
 }
